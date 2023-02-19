@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Netflix;
+  src: url(font/NetflixSans-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/background.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* color: #727273; */
+  font-family: Netflix;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+img {
+  position: absolute;
+  width: 12rem;
+  top: 1rem;
+  left: 2rem;
+}
+
+.form {
+  background-color: #000000cb;
+  border-radius: 5px;
+  width: 33vw;
+  height: 90vh;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form h1 {
+  color: white;
+}
+
+#inputs {
+  /* background-color: blue; */
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#inputs > input {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #323332;
+  color: #8c8c8c;
+}
+.password {
+  margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+  background-color: red !important;
+  font-weight: bold;
+  color: white !important;
+  cursor: pointer;
+}
+.rememberMe {
+  display: flex;
+  justify-content: space-between;
+  color: #b3b3b3 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.signUpCaptcha {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #8c8c8c;
+}
